@@ -28,13 +28,16 @@ StudyBud is a Django-based web application where users can create and join study
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/divanov11/StudyBud.git
+git clone https://github.com/IndrajeetBohra/StudyBud.git
 cd StudyBud
 ```
 
 ### 2. Create and activate a virtual environment
 
 ```bash
+# Should probably remove the env folder from this repo
+rm -rf env
+
 # Install virtualenv if you haven't already
 pip install virtualenv
 
@@ -61,3 +64,17 @@ python manage.py runserver
 ```
 
 The application will be available at http://127.0.0.1:8000/
+
+### 5. Error
+
+If you get error like
+
+```bash
+ModuleNotFoundError: No module named 'distutils'
+```
+
+install below command and try running the server again
+
+```bash
+pip install setuptools
+```
